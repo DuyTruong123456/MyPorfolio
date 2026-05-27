@@ -22,7 +22,8 @@ export default function Contact() {
       <motion.div className="container contact__inner" variants={staggerContainer}>
         <SectionTitle label="05. Contact" title="Let's work together" />
         <motion.p className="contact__text" variants={fadeUpItem}>
-          I'm open to Flutter roles and interesting mobile projects. Reach
+          I'm open to mobile and software engineering roles and interesting
+          product work. Reach
           out by email or phone — I reply in English or Vietnamese.
         </motion.p>
         <motion.p className="contact__meta" variants={fadeUpItem}>

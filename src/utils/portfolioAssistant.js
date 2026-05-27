@@ -25,7 +25,7 @@ export function getPortfolioReply(rawInput) {
 
   if (includesAny(q, ['skill', 'tech', 'stack', 'ky nang', 'flutter', 'dart'])) {
     const list = skills.map((s) => s.label).join(', ')
-    return `Key skills: ${list}. Primary focus is Flutter/Dart with BLoC/Riverpod, REST APIs, and store releases.`
+    return `Key skills: ${list}. Focus areas include cross-platform mobile, web (React), REST APIs, and App Store / Google Play releases.`
   }
 
   if (includesAny(q, ['project', 'app', 'portfolio', 'built', 'du an', 'san pham'])) {

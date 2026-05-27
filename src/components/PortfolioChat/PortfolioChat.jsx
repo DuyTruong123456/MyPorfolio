@@ -97,7 +97,7 @@ export default function PortfolioChat() {
                 type="text"
                 value={input}
                 onChange={(event) => setInput(event.target.value)}
-                placeholder="Ask about Flutter work, projects…"
+                placeholder="Ask about my work, projects…"
                 aria-label="Chat message"
                 autoComplete="off"
               />

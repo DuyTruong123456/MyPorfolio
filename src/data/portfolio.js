@@ -42,9 +42,9 @@ const bringhacksImages = Object.keys(bringhacksImageModules)
 export const site = {
   profileImage,
   name: 'Trần Cao Duy Trường',
-  title: 'Flutter Developer',
+  title: 'Mobile & Software Developer',
   tagline:
-    'I build high-quality cross-platform iOS and Android apps with reusable widget architecture, BLoC/Riverpod state, and REST API integration — from wireframes through Google Play and App Store releases.',
+    'I build production mobile and web products — cross-platform apps, REST APIs, and polished UX — from prototypes through App Store and Google Play releases.',
   email: 'duytruong8a1@gmail.com',
   phone: '+84 367 243 065',
   location: 'Ho Chi Minh City, Vietnam',
@@ -66,13 +66,13 @@ export const navLinks = [
 
 export const about = {
   paragraphs: [
-    'Flutter developer based in Ho Chi Minh City with 5 years of experience building production iOS and Android apps across healthcare, logistics, e-commerce, real-time communication, and AI-enabled mobile workflows.',
-    'Strong in Dart, reusable widget architecture, BLoC/Riverpod, REST APIs (JWT/OAuth), platform channels, and release workflows on Google Play and the App Store. Comfortable in Agile/Scrum, Git Flow, FVM, and flutter_test.',
+    'Software developer based in Ho Chi Minh City with 5 years of experience shipping production apps across healthcare, logistics, e-commerce, real-time communication, and AI-enabled products.',
+    'Comfortable across mobile (Flutter, React Native, native iOS/Android), web (React), and API-driven backends. Strong in architecture, REST integration (JWT/OAuth), Firebase, and release workflows on Google Play and the App Store. I work in Agile/Scrum with Git-based delivery and solid automated testing.',
     'Graduate of Ho Chi Minh City University of Technology (HCMUT), GPA 3.3/4.0, OISP Scholarship. IELTS 6.5.',
   ],
   highlights: [
     { label: 'Experience', value: '5+ years' },
-    { label: 'Focus', value: 'Flutter' },
+    { label: 'Focus', value: 'Mobile & Web' },
     { label: 'Education', value: 'HCMUT' },
   ],
 }
@@ -97,52 +97,52 @@ export const skills = [
 export const experience = [
   {
     company: 'UTGL',
-    role: 'Flutter Developer',
+    role: 'Mobile Developer',
     period: '2025 – 2026',
     url: 'https://www.utgl.net/',
     bullets: [
-      'Built and maintained cross-platform Flutter features for production mobile products.',
+      'Built and maintained cross-platform mobile features for production products.',
       'Integrated REST APIs and partnered with UI/UX and backend teams to ship production-ready releases.',
       'Participated in Agile delivery, code reviews, and iterative improvements to app performance and UX.',
     ],
   },
   {
     company: 'Develop.Software LLC',
-    role: 'Flutter Developer',
+    role: 'Mobile Developer',
     period: '2024 – 2025',
     url: 'https://www.develop.software/',
     bullets: [
-      'Built and optimized cross-platform Flutter apps; designed reusable widgets for client products.',
+      'Built and optimized cross-platform mobile apps; designed reusable UI components for client products.',
       'Partnered with designers and backend engineers to deliver API-driven, production-ready features.',
       'Applied licensed/open-source pub packages strategically to accelerate delivery without sacrificing quality.',
     ],
   },
   {
     company: 'BringHacks',
-    role: 'Part-time Flutter Engineer',
+    role: 'Part-time Mobile Engineer',
     period: '2023 – 2024',
     bullets: [
-      'Shipped Flutter consumer app features with iterative Agile delivery and store releases.',
+      'Shipped consumer mobile app features with iterative Agile delivery and store releases.',
       'Integrated REST/Firebase APIs, fixed defects, and improved UX through widget-level refinements.',
     ],
   },
   {
     company: 'Beings',
-    role: 'Flutter Engineer (calling / streaming)',
+    role: 'Mobile Engineer (calling / streaming)',
     period: '2023 – 2024',
     bullets: [
       'Developed real-time communication UI with platform-channel integration for WebRTC/streaming modules.',
-      'Configured iOS/Android native build settings and flutter_webrtc packaging for stable call delivery.',
+      'Configured iOS/Android native build settings and WebRTC packaging for stable call delivery.',
       'Contributed to architecture discussions, reliability fixes, and cross-team coordination in English.',
     ],
   },
   {
     company: 'Medpro',
-    role: 'Flutter Developer',
+    role: 'Mobile Developer',
     period: '2020 – 2023',
     bullets: [
-      'Owned Flutter healthcare apps end-to-end: booking flows, medical workflows, and accessibility-focused UX.',
-      'Stack: Dart, BLoC/Riverpod, REST APIs, JWT-style auth, Firebase, FCM push, and release pipelines.',
+      'Owned healthcare mobile apps end-to-end: booking flows, medical workflows, and accessibility-focused UX.',
+      'Stack: cross-platform mobile, REST APIs, JWT-style auth, Firebase, FCM push, and release pipelines.',
       'Published and maintained Google Play and App Store releases for BV Mắt, UMC, and UMC2.',
     ],
   },
