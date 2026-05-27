@@ -285,6 +285,25 @@ img {
 .hero__photo-wrap {
   display: flex;
   justify-content: center;
+  width: 100%;
+}
+
+.hero__media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  width: 100%;
+  max-width: min(320px, 70vw);
+}
+
+@media (min-width: 900px) {
+  .hero__media {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1rem;
+    max-width: none;
+  }
 }
 
 .hero__photo-frame {
@@ -324,6 +343,31 @@ img {
 @media (min-width: 900px) {
   .hero__photo {
     width: 300px;
+  }
+}
+
+.hero__face-frame {
+  position: relative;
+  width: min(280px, 70vw);
+  height: min(350px, 55vw);
+  border-radius: var(--radius);
+  padding: 4px;
+  background: linear-gradient(
+    135deg,
+    rgba(61, 214, 198, 0.35) 0%,
+    rgba(61, 214, 198, 0.12) 50%,
+    transparent 100%
+  );
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+@media (min-width: 900px) {
+  .hero__face-frame {
+    width: 280px;
+    height: 380px;
+    flex-shrink: 0;
   }
 }
 
@@ -1101,6 +1145,53 @@ button:focus-visible,
 .portfolio-chat__launcher svg {
   width: 1.15rem;
   height: 1.15rem;
+}
+
+/* Face 3D viewer (hero) */
+.face-viewer {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: radial-gradient(
+    circle at 50% 40%,
+    rgba(45, 58, 72, 0.95) 0%,
+    rgba(17, 24, 32, 0.98) 65%
+  );
+}
+
+.face-viewer__canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.face-viewer__canvas canvas {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.face-viewer__status {
+  position: absolute;
+  bottom: 0.65rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  padding: 0.35rem 0.6rem;
+  border-radius: 999px;
+  background: rgba(10, 14, 20, 0.72);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  white-space: nowrap;
+  backdrop-filter: blur(10px);
+}
+
+.face-viewer--hero {
+  border-radius: calc(var(--radius) - 2px);
+  cursor: grab;
 }
 
 @media (max-width: 768px) {

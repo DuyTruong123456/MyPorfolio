@@ -1,6 +1,7 @@
 import { site } from '../data/portfolio'
 import { motion } from 'framer-motion'
 import { fadeUpItem, floatLoop, staggerContainer, viewportOnce } from '../utils/motion'
+import Face3DViewer from './Face3DViewer'
 
 export default function Hero() {
   return (
@@ -48,15 +49,20 @@ export default function Hero() {
         </motion.div>
 
         <motion.div className="hero__photo-wrap" variants={fadeUpItem}>
-          <motion.div className="hero__photo-frame" animate={floatLoop}>
-            <img
-              src={site.profileImage}
-              alt={`Portrait of ${site.name}`}
-              className="hero__photo"
-              width={320}
-              height={400}
-            />
-          </motion.div>
+          <div className="hero__media">
+            <motion.div className="hero__photo-frame" animate={floatLoop}>
+              <img
+                src={site.profileImage}
+                alt={`Portrait of ${site.name}`}
+                className="hero__photo"
+                width={320}
+                height={400}
+              />
+            </motion.div>
+            <div className="hero__face-frame">
+              <Face3DViewer className="face-viewer--hero" />
+            </div>
+          </div>
         </motion.div>
       </motion.div>
       <div className="hero__accent" aria-hidden="true" />
